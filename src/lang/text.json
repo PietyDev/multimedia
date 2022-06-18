@@ -6,7 +6,7 @@
     "Links": [
       { "id": "home", "label": "Inicio", "index": 0, "to": "/" },
       { "id": "history", "index": 1, "label": "Historia", "to": "/history" },
-      { "id": "geagraphy", "index": 2, "label": "Geografía", "to": "/geography" },
+      { "id": "geography", "index": 2, "label": "Geografía", "to": "/geography" },
       { "id": "economy", "index": 3, "label": "Economía", "to": "/economy" },
       { "id": "culture", "index": 4, "label": "Cultura", "to": "/culture" }
     ],
