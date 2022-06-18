@@ -1,0 +1,8 @@
+{
+  "links": [
+    { "label": "Historia", "to": "/history" },
+    { "label": "Geografía", "to": "/geography" },
+    { "label": "Economía", "to": "/economy" },
+    { "label": "Cultura", "to": "/culture" }
+  ]
+}
