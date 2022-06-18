@@ -14,10 +14,10 @@ const CopyrightRow = () => {
 
   return (
     <Container
-      sx={{ background: theme.palette.secondary.special, padding: "20px" }}
+      sx={{ background: theme.palette.text.disabled, padding: "10px" }}
       justifyContent="center"
     >
-      <Typography variant="subtitle1" align="center">
+      <Typography variant="subtitle1" align="center" sx={{ color: theme.palette.link.main }}>
         {languageState.texts.Footer.Copyright}
       </Typography>
     </Container>

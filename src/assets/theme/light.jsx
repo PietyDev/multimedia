@@ -6,18 +6,20 @@ const light = createTheme({
   palette: {
     type: "light",
     primary: {
-      main: "#FC6011",
-      light: "#fc7f40",
-      dark: "#b0430b",
+      main: "#3f51b5",
+      light: "#757de8",
+      dark: "#002984",
       contrastText: "#ffffff",
     },
-    checkbox: {
-      main: "#f4aa76",
+    link: {
+      main: "rgb(221, 229, 236)",
+      dark: "rgb(200, 200, 200)",
+      light: "aliceblue",
     },
     secondary: {
-      main: "#11263C",
-      light: "#0b1a2a",
-      dark: "#405163",
+      main: "#f44336",
+      light: "#ff7961",
+      dark: "#ba000d",
       contrastText: "#ffffff",
     },
     background: {

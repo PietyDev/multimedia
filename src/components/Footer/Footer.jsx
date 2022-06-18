@@ -29,7 +29,7 @@ const Footer = () => {
   useEffect(() => {}, [routeState]);
 
   return (
-    <Box sx={{ background: theme.palette.secondary.dark }}>
+    <Box sx={{ background: theme.palette.background.dark }}>
       <Grid
         sx={{
           flexGrow: 1,
@@ -44,12 +44,12 @@ const Footer = () => {
       >
         <Grid md={5} item>
           <Container flexDirection="column" sx={{ paddingRight: "20px" }}>
-            <Typography variant="subtitle1" sx={{ color: theme.palette.text.disabled }}>
+            <Typography variant="subtitle1" sx={{ color: theme.palette.link.main }}>
               {languageState.texts.Footer.Description1}
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{ color: theme.palette.text.disabled, marginTop: "20px" }}
+              sx={{ color: theme.palette.link.main, marginTop: "20px" }}
             >
               {languageState.texts.Footer.Description2}
             </Typography>
@@ -60,17 +60,16 @@ const Footer = () => {
         </Grid>
         <Grid xs={10} md={2} item>
           <Container flexDirection="column">
-            <Typography variant="subtitle1" sx={{ textTransform: "none" }}>
+            <Typography
+              variant="subtitle1"
+              sx={{ textTransform: "none", color: theme.palette.link.main }}
+            >
               {languageState.texts.Navbar.Title}
             </Typography>
             <Container align="flex-start" flexDirection="column">
               {languageState.texts.Navbar.Links.map((item, i) => (
                 <Container align="flex-start" key={item.id} sx={{ marginTop: "15px" }}>
-                  <Link
-                    style={{ color: theme.palette.text.disabled }}
-                    id={`fl${i}`}
-                    to={item.route}
-                  >
+                  <Link style={{ textDecoration: "none" }} id={`fl${i}`} to={item.route}>
                     <Typography
                       id={`fb${i}`}
                       onClick={handleLink}
@@ -78,14 +77,11 @@ const Footer = () => {
                         textAlign: "left",
                         textTransform: "none",
                         color:
-                          item.index === routeState.route
-                            ? theme.palette.primary.main
-                            : theme.palette.text.disabled,
+                          item.index === routeState.index
+                            ? theme.palette.link.dark
+                            : theme.palette.link.main,
                         "&:hover": {
-                          color:
-                            item.index === routeState.route
-                              ? theme.palette.primary.main
-                              : theme.palette.text.secondary,
+                          color: theme.palette.link.dark,
                         },
                       }}
                       size="medium"
@@ -100,29 +96,27 @@ const Footer = () => {
         </Grid>
         <Grid xs={10} md={2} item>
           <Container flexDirection="column">
-            <Typography variant="subtitle1" sx={{ textTransform: "none" }}>
+            <Typography
+              variant="subtitle1"
+              sx={{ textTransform: "none", color: theme.palette.link.main }}
+            >
               {languageState.texts.Footer.UtilLinks.Title}
             </Typography>
             <Container flexDirection="column">
               {languageState.texts.Footer.UtilLinks.Links.map((item, i) => (
                 <Container key={item.id} align="center" sx={{ marginTop: "15px" }}>
-                  <Link
-                    style={{ color: theme.palette.text.disabled }}
-                    id={`fl${i}`}
-                    to={item.route}
-                  >
+                  <Link style={{ textDecoration: "none" }} id={`fl${i}`} to={item.route}>
                     <Typography
                       id={`fb${i}`}
                       onClick={handleLink}
                       sx={{
                         textTransform: "none",
                         color:
-                          item.index === routeState.route ? "primary" : theme.palette.text.disabled,
+                          item.index === routeState.index
+                            ? theme.palette.link.dark
+                            : theme.palette.link.main,
                         "&:hover": {
-                          color:
-                            item.index === routeState.route
-                              ? theme.palette.primary.main
-                              : theme.palette.text.secondary,
+                          color: theme.palette.link.dark,
                         },
                       }}
                       variant="subtitle1"
@@ -137,7 +131,10 @@ const Footer = () => {
         </Grid>
         <Grid xs={10} md={2} item>
           <Container flexDirection="column">
-            <Typography variant="subtitle1" sx={{ textTransform: "none" }}>
+            <Typography
+              variant="subtitle1"
+              sx={{ textTransform: "none", color: theme.palette.link.main }}
+            >
               {languageState.texts.Footer.ContactLinks.Title}
             </Typography>
             <Container flexDirection="column">
@@ -145,7 +142,13 @@ const Footer = () => {
                 <Container key={item.id} align="center" sx={{ marginTop: "15px" }}>
                   {item.action ? (
                     <MuiLink
-                      style={{ color: theme.palette.text.disabled, textDecoration: "none" }}
+                      sx={{
+                        textDecoration: "none",
+                        color: theme.palette.link.main,
+                        "&:hover": {
+                          color: theme.palette.link.dark,
+                        },
+                      }}
                       id={`fl${i}`}
                       href={item.action}
                     >
@@ -154,13 +157,6 @@ const Footer = () => {
                         onClick={handleLink}
                         sx={{
                           textTransform: "none",
-                          color: theme.palette.text.disabled,
-                          "&:hover": {
-                            color:
-                              item.index === routeState.route
-                                ? theme.palette.primary.main
-                                : theme.palette.text.secondary,
-                          },
                         }}
                         size="medium"
                       >
@@ -172,7 +168,7 @@ const Footer = () => {
                       variant="subtitle1"
                       sx={{
                         textTransform: "none",
-                        color: theme.palette.text.disabled,
+                        color: theme.palette.link.main,
                       }}
                     >
                       {item.label}
