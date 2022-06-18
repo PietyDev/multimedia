@@ -11,6 +11,11 @@ const light = createTheme({
       dark: "#002984",
       contrastText: "#ffffff",
     },
+    dark: {
+      main: "#222",
+      light: "#333",
+      dark: "#111",
+    },
     link: {
       main: "rgb(221, 229, 236)",
       dark: "rgb(200, 200, 200)",

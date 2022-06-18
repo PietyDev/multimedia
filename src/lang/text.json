@@ -3,6 +3,18 @@
     "Home": {
       "Title": "El Cobre"
     },
+    "History": {
+      "Title": "Historia"
+    },
+    "Geography": {
+      "Title": "Geografía"
+    },
+    "Economy": {
+      "Title": "Economía"
+    },
+    "Culture": {
+      "Title": "Cultura"
+    },
     "Links": [
       { "id": "home", "label": "Inicio", "index": 0, "to": "/" },
       { "id": "history", "index": 1, "label": "Historia", "to": "/history" },

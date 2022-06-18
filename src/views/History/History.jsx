@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 // contexts
 import { useLanguage } from "context/LanguageProvider";
+import { useRoute } from "context/RouterProvider";
 
 // @mui components
 import { useTheme, Button, Link, Typography } from "@mui/material";
@@ -15,10 +16,14 @@ import Container from "components/Container/Container";
 import Hero from "layouts/Hero/Hero";
 
 const History = () => {
+  const { setRouteState } = useRoute();
   const { languageState } = useLanguage();
+
   const theme = useTheme();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    setRouteState({ type: "set", to: 1 });
+  }, []);
   return (
     <Container>
       <Hero>

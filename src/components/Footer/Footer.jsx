@@ -19,6 +19,7 @@ import CopyrightRow from "./CopyrightRow/CopyrightRow";
 const Footer = () => {
   const { routeState, setRouteState } = useRoute();
   const { languageState } = useLanguage();
+
   const theme = useTheme();
 
   const handleLink = (e) => {
@@ -77,7 +78,7 @@ const Footer = () => {
                         textAlign: "left",
                         textTransform: "none",
                         color:
-                          item.index === routeState.index
+                          item.index === routeState.route
                             ? theme.palette.link.dark
                             : theme.palette.link.main,
                         "&:hover": {
@@ -112,7 +113,7 @@ const Footer = () => {
                       sx={{
                         textTransform: "none",
                         color:
-                          item.index === routeState.index
+                          item.index === routeState.route
                             ? theme.palette.link.dark
                             : theme.palette.link.main,
                         "&:hover": {

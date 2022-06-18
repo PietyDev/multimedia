@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 // contexts
 import { useLanguage } from "context/LanguageProvider";
+import { useRoute } from "context/RouterProvider";
 
 // @mui components
 import { useTheme, Button, Link, Typography } from "@mui/material";
@@ -15,10 +16,14 @@ import Container from "components/Container/Container";
 import Hero from "layouts/Hero/Hero";
 
 const Home = () => {
+  const { setRouteState } = useRoute();
   const { languageState } = useLanguage();
+
   const theme = useTheme();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    setRouteState({ type: "set", to: 0 });
+  }, []);
   return (
     <Container>
       <Hero>
@@ -30,13 +35,13 @@ const Home = () => {
                 <Link key={item.to} to={item.to} style={{ textDecoration: "none" }}>
                   <Button
                     variant="outlined"
-                    color="primary"
+                    color="dark"
                     sx={{
                       textTransform: "capitalize",
                       marginRight: "20px",
                       borderRadius: "1rem",
                       "&:hover": {
-                        background: theme.palette.primary.main,
+                        background: theme.palette.background.dark,
                         color: "aliceblue",
                       },
                     }}
