@@ -28,8 +28,10 @@ const Navbar = () => {
         background={theme.palette.background.dark}
       >
         {languageState.texts.Links.map((item) => (
-          <Link key={item.to} to={item.to}>
-            <Button>{item.label}</Button>
+          <Link key={item.to} to={item.to} style={{ textDecoration: "none" }}>
+            <Button color="link" sx={{ textTransform: "capitalize" }}>
+              {item.label}
+            </Button>
           </Link>
         ))}
       </Container>

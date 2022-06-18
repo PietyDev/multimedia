@@ -29,7 +29,7 @@ const Footer = () => {
   useEffect(() => {}, [routeState]);
 
   return (
-    <Box sx={{ background: theme.palette.background.dark }}>
+    <Box sx={{ background: theme.palette.background.dark, marginTop: "40px" }}>
       <Grid
         sx={{
           flexGrow: 1,
@@ -64,12 +64,12 @@ const Footer = () => {
               variant="subtitle1"
               sx={{ textTransform: "none", color: theme.palette.link.main }}
             >
-              {languageState.texts.Navbar.Title}
+              {languageState.texts.Footer.Title}
             </Typography>
             <Container align="flex-start" flexDirection="column">
-              {languageState.texts.Navbar.Links.map((item, i) => (
+              {languageState.texts.Links.map((item, i) => (
                 <Container align="flex-start" key={item.id} sx={{ marginTop: "15px" }}>
-                  <Link style={{ textDecoration: "none" }} id={`fl${i}`} to={item.route}>
+                  <Link style={{ textDecoration: "none" }} id={`fl${i}`} to={item.to}>
                     <Typography
                       id={`fb${i}`}
                       onClick={handleLink}

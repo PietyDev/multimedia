@@ -1,70 +1,17 @@
 {
   "es": {
-    "Links": [
-      { "label": "Historia", "to": "/history" },
-      { "label": "Geografía", "to": "/geography" },
-      { "label": "Economía", "to": "/economy" },
-      { "label": "Cultura", "to": "/culture" }
-    ],
-    "Navbar": {
-      "Title": "Menú",
-      "Links": [
-        {
-          "id": "home",
-          "label": "Inicio",
-          "route": "/",
-          "index": 0
-        },
-        {
-          "id": "about-us",
-          "label": "Conócenos",
-          "route": "/about-us",
-          "index": 1
-        },
-        {
-          "id": "centers",
-          "label": "Centros de Cultura",
-          "route": "/culture-centers",
-          "index": 2
-        },
-        {
-          "id": "activities",
-          "label": "Actividades",
-          "route": "/activities",
-          "index": 3,
-          "menu": [
-            {
-              "label": "Tabla",
-              "jndex": "0"
-            },
-            {
-              "label": "Mapa",
-              "jndex": "1"
-            },
-            {
-              "label": "Calendario",
-              "jndex": "2"
-            }
-          ]
-        },
-        {
-          "id": "news",
-          "label": "Noticias",
-          "route": "/news",
-          "index": 4
-        },
-        {
-          "id": "contact-us",
-          "label": "Contáctenos",
-          "route": "/contact-us",
-          "index": 5
-        }
-      ],
-      "SearchModal": {
-        "Label": "Buscar"
-      }
+    "Home": {
+      "Title": "El Cobre"
     },
+    "Links": [
+      { "id": "home", "label": "Inicio", "index": 0, "to": "/" },
+      { "id": "history", "index": 1, "label": "Historia", "to": "/history" },
+      { "id": "geagraphy", "index": 2, "label": "Geografía", "to": "/geography" },
+      { "id": "economy", "index": 3, "label": "Economía", "to": "/economy" },
+      { "id": "culture", "index": 4, "label": "Cultura", "to": "/culture" }
+    ],
     "Footer": {
+      "Title": "Menú",
       "Description1": "Si te interesa la cultura en todas sus expresiones ¡Ven a Santiago de los Caballeros y explora nuestras maravillas!",
       "Description2": "Sìguenos en nuestras redes sociales.",
       "UtilLinks": {
