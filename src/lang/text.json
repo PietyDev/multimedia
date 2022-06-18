@@ -1,0 +1,109 @@
+{
+  "es": {
+    "Links": [
+      { "label": "Historia", "to": "/history" },
+      { "label": "Geografía", "to": "/geography" },
+      { "label": "Economía", "to": "/economy" },
+      { "label": "Cultura", "to": "/culture" }
+    ],
+    "Navbar": {
+      "Title": "Menú",
+      "Links": [
+        {
+          "id": "home",
+          "label": "Inicio",
+          "route": "/",
+          "index": 0
+        },
+        {
+          "id": "about-us",
+          "label": "Conócenos",
+          "route": "/about-us",
+          "index": 1
+        },
+        {
+          "id": "centers",
+          "label": "Centros de Cultura",
+          "route": "/culture-centers",
+          "index": 2
+        },
+        {
+          "id": "activities",
+          "label": "Actividades",
+          "route": "/activities",
+          "index": 3,
+          "menu": [
+            {
+              "label": "Tabla",
+              "jndex": "0"
+            },
+            {
+              "label": "Mapa",
+              "jndex": "1"
+            },
+            {
+              "label": "Calendario",
+              "jndex": "2"
+            }
+          ]
+        },
+        {
+          "id": "news",
+          "label": "Noticias",
+          "route": "/news",
+          "index": 4
+        },
+        {
+          "id": "contact-us",
+          "label": "Contáctenos",
+          "route": "/contact-us",
+          "index": 5
+        }
+      ],
+      "SearchModal": {
+        "Label": "Buscar"
+      }
+    },
+    "Footer": {
+      "Description1": "Si te interesa la cultura en todas sus expresiones ¡Ven a Santiago de los Caballeros y explora nuestras maravillas!",
+      "Description2": "Sìguenos en nuestras redes sociales.",
+      "UtilLinks": {
+        "Title": "Enlaces útiles",
+        "Links": [
+          {
+            "id": "privacy-policy",
+            "label": "Política de Privacidad",
+            "route": "/privacy-policy",
+            "index": 6
+          },
+          {
+            "id": "cookies-policy",
+            "label": "Política de Cookies",
+            "route": "/cookies-policy",
+            "index": 7
+          }
+        ]
+      },
+      "ContactLinks": {
+        "Title": "Contáctenos",
+        "Links": [
+          {
+            "id": "phone",
+            "label": "Teléfono: (+1) 829-284-6343",
+            "action": "tel:(+1) 829-284-6343"
+          },
+          {
+            "id": "email",
+            "label": "Correo electrónico: cineserviceg@gmail.com",
+            "action": "mailto:cineserviceg@gmail.com"
+          },
+          {
+            "id": "address",
+            "label": "Warehouse 14, F2JG+MV6, Santo Domingo, Dominican Republic"
+          }
+        ]
+      },
+      "Copyright": "Copyright © 2021 - Santiago Cultural creado por Inmersoft"
+    }
+  }
+}
