@@ -6,6 +6,10 @@
         "Gallery": {
           "Title": "Galería",
           "Description": "Explora la galería de El Cobre "
+        },
+        "About": {
+          "Title": "Acerca del sitio",
+          "Description": "Sitio web, multimedia, para describir a El Cobre, poblado de Santiago de Cuba"
         }
       }
     },

@@ -17,6 +17,7 @@ import heroBackground from "assets/images/color.webp";
 // sections
 import HeroSection from "./Sections/Hero/Hero";
 import GallerySection from "./Sections/Gallery/Gallery";
+import AboutSection from "./Sections/About/About";
 
 const Home = () => {
   const { setRouteState } = useRoute();
@@ -31,6 +32,7 @@ const Home = () => {
         <HeroSection />
       </Hero>
       <GallerySection />
+      <AboutSection />
     </Container>
   );
 };

@@ -51,7 +51,12 @@ const Gallery = () => {
   };
 
   return (
-    <Section>
+    <Section
+      sx={{
+        padding: { lg: "75px 10rem 150px 10rem", sm: "50px 60px", xs: "20px 20px" },
+        flexDirection: "column",
+      }}
+    >
       <motion.div
         variants={apparition}
         initial="hidden"
