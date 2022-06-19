@@ -21,6 +21,11 @@ const light = createTheme({
       dark: "rgb(200, 200, 200)",
       light: "aliceblue",
     },
+    lighter: {
+      main: "#fff",
+      dark: "#EEE",
+      light: "aliceblue",
+    },
     secondary: {
       main: "#f44336",
       light: "#ff7961",

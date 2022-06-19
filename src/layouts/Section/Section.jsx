@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 // own components
 import Container from "components/Container/Container";
 
-const Hero = (props) => {
+const Section = (props) => {
   const { background, sx, children, style } = props;
   return (
     <Container background={background} sx={sx} style={style}>
@@ -13,20 +13,16 @@ const Hero = (props) => {
   );
 };
 
-Hero.defaultProps = {
+Section.defaultProps = {
   background: "aliceblue",
   sx: {
     padding: { lg: "50px 10rem 50px 10rem", sm: "50px 60px", xs: "20px 20px" },
-    justifyContent: "center",
-    height: "80vh",
     flexDirection: "column",
-    backgroundPosition: { md: "center", sm: "-700px", xs: "-900px" },
-    backgroundRepeat: "no-repeat",
   },
   style: {},
 };
 
-Hero.propTypes = {
+Section.propTypes = {
   children: PropTypes.node.isRequired,
   background: PropTypes.string,
   /**
@@ -44,4 +40,4 @@ Hero.propTypes = {
   ]),
 };
 
-export default Hero;
+export default Section;

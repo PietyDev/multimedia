@@ -3,9 +3,6 @@
 /* eslint-disable react/prop-types */
 import { forwardRef } from "react";
 
-// @emotion/css
-import { css } from "@emotion/css";
-
 // prop-types
 import PropTypes from "prop-types";
 import { Box } from "@mui/material";
@@ -28,7 +25,7 @@ const Container = forwardRef((props, ref) => {
     style,
   } = props;
 
-  const newSx = css({
+  const newSx = {
     flexDirection,
     display,
     alignItems,
@@ -36,7 +33,7 @@ const Container = forwardRef((props, ref) => {
     width: fullWidth ? "100%" : "initial",
     background: background || "transparent",
     ...sx,
-  });
+  };
 
   return (
     <Box
@@ -45,7 +42,8 @@ const Container = forwardRef((props, ref) => {
       style={style}
       id={id}
       name={name}
-      className={`${newSx} ${className}`}
+      sx={newSx}
+      className={className}
       {...extraProps}
     >
       {children}

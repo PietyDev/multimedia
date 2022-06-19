@@ -1,7 +1,13 @@
 {
   "es": {
     "Home": {
-      "Title": "El Cobre"
+      "Title": "El Cobre",
+      "Sections": {
+        "Gallery": {
+          "Title": "Galería",
+          "Description": "Explora la galería de El Cobre "
+        }
+      }
     },
     "History": {
       "Title": "Historia"
