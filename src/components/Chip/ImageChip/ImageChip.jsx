@@ -16,7 +16,7 @@ const ImageChip = (props) => {
   const [values, setValues] = useState({ image: "no-image", title: "no-title", text: "no-text" });
 
   useEffect(() => {
-    if (image.title === "no-title") setValues({ image, title, text });
+    if (item.title === "no-title") setValues({ image, title, text });
     else setValues(item);
   }, []);
 
