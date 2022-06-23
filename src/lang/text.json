@@ -258,13 +258,13 @@
         "Links": [
           {
             "id": "phone",
-            "label": "Teléfono: (+1) 829-284-6343",
-            "action": "tel:(+1) 829-284-6343"
+            "label": "Teléfono: (+1) 5356174215",
+            "action": "tel:(+1) 5356174215"
           },
           {
             "id": "email",
-            "label": "Correo electrónico: cineserviceg@gmail.com",
-            "action": "mailto:cineserviceg@gmail.com"
+            "label": "Correo electrónico: visir2021g@gmail.com",
+            "action": "mailto:visir2021g@gmail.com"
           },
           {
             "id": "address",
