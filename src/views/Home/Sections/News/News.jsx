@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "context/LanguageProvider";
 
 // @mui components
-import { Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 // own components
 import Container from "components/Container/Container";
@@ -80,34 +80,38 @@ const News = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        style={{ display: "flex", padding: 0, flexWrap: "wrap" }}
+        style={{ padding: 0 }}
       >
-        {[
-          { img: heroBackground, id: 0 },
-          { img: heroBackground, id: 1 },
-          { img: heroBackground, id: 2 },
-          { img: heroBackground, id: 3 },
-          { img: heroBackground, id: 4 },
-          { img: heroBackground, id: 5 },
-          { img: heroBackground, id: 6 },
-        ].map((item) => (
-          <motion.div key={item.id} variants={ulItem} viewport={{ once: true }}>
-            <Container
-              key={item.id}
-              sx={{
-                img: {
-                  width: "350px",
-                  height: "200px",
-                  objectFit: "cover",
-                  borderRadius: "1rem",
-                  margin: "10px",
-                },
-              }}
-            >
-              <Image img={item.img} alt={item.id} />
-            </Container>
-          </motion.div>
-        ))}
+        <Grid container>
+          {[
+            { img: heroBackground, id: 0 },
+            { img: heroBackground, id: 1 },
+            { img: heroBackground, id: 2 },
+            { img: heroBackground, id: 3 },
+            { img: heroBackground, id: 4 },
+            { img: heroBackground, id: 5 },
+            { img: heroBackground, id: 6 },
+          ].map((item) => (
+            <Grid item key={item.id}>
+              <motion.div variants={ulItem} viewport={{ once: true }}>
+                <Container
+                  key={item.id}
+                  sx={{
+                    img: {
+                      width: "350px",
+                      height: "200px",
+                      objectFit: "cover",
+                      borderRadius: "1rem",
+                      margin: "10px",
+                    },
+                  }}
+                >
+                  <Image img={item.img} alt={item.id} />
+                </Container>
+              </motion.div>
+            </Grid>
+          ))}
+        </Grid>
       </motion.ul>
     </Section>
   );

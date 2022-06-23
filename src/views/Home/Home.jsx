@@ -12,7 +12,7 @@ import Container from "components/Container/Container";
 import Hero from "layouts/Hero/Hero";
 
 // images
-import heroBackground from "assets/images/color.webp";
+import heroBackground from "assets/images/elcobre.jpeg";
 
 // sections
 import HeroSection from "./Sections/Hero/Hero";
