@@ -15,6 +15,9 @@ import Container from "components/Container/Container";
 // layouts
 import Hero from "layouts/Hero/Hero";
 
+// sections
+import HeroSection from "./Sections/Hero/Hero";
+
 const Culture = () => {
   const { setRouteState } = useRoute();
   const { languageState } = useLanguage();
@@ -26,8 +29,12 @@ const Culture = () => {
   }, []);
   return (
     <Container>
+      <Hero justifyContent="center" background={`url(${heroBackground})`}>
+        <HeroSection />
+      </Hero>
       <Hero>
-        <Typography variant="h1">{languageState.texts.Culture.Title}</Typography>
+        
+
         <Container sx={{ marginTop: "20vh" }}>
           {languageState.texts.Links.map(
             (item, index) =>
