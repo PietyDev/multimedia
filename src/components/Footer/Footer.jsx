@@ -63,7 +63,7 @@ const Footer = () => {
           <Container flexDirection="column">
             <Typography
               variant="subtitle1"
-              sx={{ textTransform: "none", color: theme.palette.link.main }}
+              sx={{ textTransform: "none", color: theme.palette.link.main, fontWeight: "bold" }}
             >
               {languageState.texts.Footer.Title}
             </Typography>
@@ -99,7 +99,7 @@ const Footer = () => {
           <Container flexDirection="column">
             <Typography
               variant="subtitle1"
-              sx={{ textTransform: "none", color: theme.palette.link.main }}
+              sx={{ textTransform: "none", color: theme.palette.link.main, fontWeight: "bold" }}
             >
               {languageState.texts.Footer.UtilLinks.Title}
             </Typography>
@@ -134,7 +134,7 @@ const Footer = () => {
           <Container flexDirection="column">
             <Typography
               variant="subtitle1"
-              sx={{ textTransform: "none", color: theme.palette.link.main }}
+              sx={{ textTransform: "none", color: theme.palette.link.main, fontWeight: "bold" }}
             >
               {languageState.texts.Footer.ContactLinks.Title}
             </Typography>
