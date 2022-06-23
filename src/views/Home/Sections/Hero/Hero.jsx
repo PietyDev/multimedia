@@ -1,4 +1,6 @@
 /* eslint-disable react/function-component-definition */
+import { useNavigate } from "react-router-dom";
+import { css } from "@emotion/css";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -15,12 +17,20 @@ import { ImageChip } from "components/Chip/Chip";
 
 // images
 import heroBackground from "assets/images/color.webp";
-import { css } from "@emotion/css";
 
 const Hero = () => {
   const { languageState } = useLanguage();
 
+  const navigate = useNavigate();
+
   const theme = useTheme();
+
+  const linkTo = (e) => {
+    const { id } = e.target;
+    const splited = id.split("-");
+    if (splited.length === 1) navigate(id);
+    else navigate(splited[0]);
+  };
 
   const linkCss = css({
     textDecoration: "none !important",
@@ -93,6 +103,8 @@ const Hero = () => {
                   <motion.div key={item.to} variants={ulItem} viewport={{ once: true }}>
                     <Link to={item.to} className={linkCss}>
                       <ImageChip
+                        onClick={linkTo}
+                        id={item.to}
                         image={heroBackground}
                         title={item.label}
                         text={item.description}

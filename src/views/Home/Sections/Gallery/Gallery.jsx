@@ -91,7 +91,7 @@ const Gallery = () => {
           { img: heroBackground, id: 5 },
           { img: heroBackground, id: 6 },
         ].map((item) => (
-          <motion.div key={item.to} variants={ulItem} viewport={{ once: true }}>
+          <motion.div key={item.id} variants={ulItem} viewport={{ once: true }}>
             <Container
               key={item.id}
               sx={{

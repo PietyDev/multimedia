@@ -25,6 +25,7 @@ const ImageChip = (props) => {
     id,
     name,
     style,
+    onClick,
   } = props;
 
   const newSx = {
@@ -38,14 +39,21 @@ const ImageChip = (props) => {
   const [values, setValues] = useState({ image: "no-image", title: "no-title", text: "no-text" });
 
   useEffect(() => {
-    console.log(newSx);
     if (item.title === "no-title") setValues({ image, title, text });
     else setValues(item);
   }, []);
 
   return (
-    <Container id={id} name={name} style={style} className={className} sx={newSx}>
+    <Container
+      extraProps={{ onClick }}
+      id={id}
+      name={name}
+      style={style}
+      className={className}
+      sx={newSx}
+    >
       <Container
+        id={`${id}-container1`}
         sx={{
           width: "65px",
           height: "65px",
@@ -59,11 +67,15 @@ const ImageChip = (props) => {
           },
         }}
       >
-        <Image img={values.image} alt={`${values.title}-chip`} />
+        <Image id={`${id}-image`} img={values.image} alt={`${values.title}-chip`} />
       </Container>
-      <Container flexDirection="column">
-        <Typography variant="subtitle1">{values.title}</Typography>
-        <Typography variant="body2">{values.text}</Typography>
+      <Container id={`${id}-container2`} flexDirection="column">
+        <Typography id={`${id}-title`} variant="subtitle1">
+          {values.title}
+        </Typography>
+        <Typography id={`${id}-text`} variant="body2">
+          {values.text}
+        </Typography>
       </Container>
     </Container>
   );
@@ -85,6 +97,7 @@ ImageChip.defaultProps = {
     alignItems: "center",
   },
   style: {},
+  onClick: undefined,
 };
 
 ImageChip.propTypes = {
@@ -112,6 +125,7 @@ ImageChip.propTypes = {
     PropTypes.func,
     PropTypes.object,
   ]),
+  onClick: PropTypes.func,
 };
 
 export default ImageChip;

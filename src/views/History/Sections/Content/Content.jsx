@@ -86,6 +86,7 @@ const Content = () => {
                       <Box>
                         {jtem.content.map((ktem) => (
                           <Typography
+                            key={ktem.id}
                             sx={{ textAlign: "justify", marginBottom: "10px" }}
                             variant={ktem.type}
                           >
