@@ -15,11 +15,17 @@ import { ImageChip } from "components/Chip/Chip";
 
 // images
 import heroBackground from "assets/images/color.webp";
+import { css } from "@emotion/css";
 
 const Hero = () => {
   const { languageState } = useLanguage();
 
   const theme = useTheme();
+
+  const linkCss = css({
+    textDecoration: "none !important",
+    cursor: "pointer",
+  });
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -79,18 +85,24 @@ const Hero = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            style={{ display: "flex", padding: 0, flexWrap: "wrap" }}
+            style={{ display: "flex", padding: 0, flexWrap: "wrap", justifyContent: "center" }}
           >
             {languageState.texts.Links.map(
               (item, index) =>
                 index !== 0 && (
                   <motion.div key={item.to} variants={ulItem} viewport={{ once: true }}>
-                    <Link to={item.to} style={{ textDecoration: "none" }}>
+                    <Link to={item.to} className={linkCss}>
                       <ImageChip
                         image={heroBackground}
                         title={item.label}
                         text={item.description}
                         sx={{
+                          "&:hover": {
+                            transform: "translateY(-10px)",
+                            background: `${theme.palette.primary.main}ef`,
+                          },
+                          transition: "all 500ms ease",
+                          width: "275px",
                           alignItems: "center",
                           background: `${theme.palette.primary.main}a6`,
                           borderRadius: "1rem",

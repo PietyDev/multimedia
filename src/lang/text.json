@@ -208,28 +208,28 @@
         "index": 1,
         "label": "Historia",
         "to": "/history",
-        "description": "Visita El Cobre"
+        "description": "Conoce su historia"
       },
       {
         "id": "geography",
         "index": 2,
         "label": "Geografía",
         "to": "/geography",
-        "description": "Visita El Cobre"
+        "description": "Límites, minerales y mucho más"
       },
       {
         "id": "economy",
         "index": 3,
         "label": "Economía",
         "to": "/economy",
-        "description": "Visita El Cobre"
+        "description": ""
       },
       {
         "id": "culture",
         "index": 4,
         "label": "Cultura",
         "to": "/culture",
-        "description": "Visita El Cobre"
+        "description": "Tradiciones y costumbres"
       }
     ],
     "Footer": {
