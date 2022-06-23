@@ -7,7 +7,7 @@ import { useLanguage } from "context/LanguageProvider";
 import { useRoute } from "context/RouterProvider";
 
 // @mui components
-import { useTheme, Button, Link, Typography, Box } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
 // own components
 import Container from "components/Container/Container";
@@ -21,6 +21,12 @@ import florCrombet from "assets/images/flor_crombet.jpg";
 import Hero from "layouts/Hero/Hero";
 import Section from "layouts/Section/Section";
 
+// images
+import heroBackground from "assets/images/color.webp";
+
+// sections
+import HeroSection from "./Sections/Hero/Hero";
+
 const History = () => {
   const { setRouteState } = useRoute();
   const { languageState } = useLanguage();
@@ -28,40 +34,15 @@ const History = () => {
   // images
   const images = [oldImage, florCrombet];
 
-  const theme = useTheme();
-
   useEffect(() => {
     setRouteState({ type: "set", to: 1 });
   }, []);
   return (
     <Container flexDirection="column">
-      <Hero>
-        <Typography variant="h1">{languageState.texts.History.Title}</Typography>
-        <Container sx={{ marginTop: "20vh" }}>
-          {languageState.texts.Links.map(
-            (item, index) =>
-              index !== 0 && (
-                <Link key={item.to} to={item.to} style={{ textDecoration: "none" }}>
-                  <Button
-                    variant="outlined"
-                    color="primary"
-                    sx={{
-                      textTransform: "capitalize",
-                      marginRight: "20px",
-                      borderRadius: "1rem",
-                      "&:hover": {
-                        background: theme.palette.primary.main,
-                        color: "aliceblue",
-                      },
-                    }}
-                  >
-                    {item.label}
-                  </Button>
-                </Link>
-              )
-          )}
-        </Container>
+      <Hero justifyContent="center" background={`url(${heroBackground})`}>
+        <HeroSection />
       </Hero>
+
       <Section>
         {languageState.texts.History.Content.map((item) => (
           <Container key={item.id}>
