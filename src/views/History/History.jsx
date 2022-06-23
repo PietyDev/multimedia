@@ -24,6 +24,7 @@ const History = () => {
   useEffect(() => {
     setRouteState({ type: "set", to: 1 });
   }, []);
+
   return (
     <Container flexDirection="column">
       <Hero justifyContent="center" background={`url(${heroBackground})`}>

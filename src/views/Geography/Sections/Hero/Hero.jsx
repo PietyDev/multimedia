@@ -27,7 +27,7 @@ const Hero = () => {
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <Typography variant="h1">{languageState.texts.Culture.Title}</Typography>
+      <Typography variant="h1">{languageState.texts.Geography.Title}</Typography>
     </motion.div>
   );
 };
