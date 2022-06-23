@@ -7,6 +7,10 @@
           "Title": "Galería",
           "Description": "Explora la galería de El Cobre "
         },
+        "News": {
+          "Title": "Últimas noticias",
+          "Description": "Ponte al día con lo que sucede en El Cobre"
+        },
         "About": {
           "Title": "Acerca del sitio",
           "Description": "Sitio web, multimedia, para describir a El Cobre, poblado de Santiago de Cuba"
@@ -198,11 +202,35 @@
       "Title": "Cultura"
     },
     "Links": [
-      { "id": "home", "label": "Inicio", "index": 0, "to": "/" },
-      { "id": "history", "index": 1, "label": "Historia", "to": "/history" },
-      { "id": "geography", "index": 2, "label": "Geografía", "to": "/geography" },
-      { "id": "economy", "index": 3, "label": "Economía", "to": "/economy" },
-      { "id": "culture", "index": 4, "label": "Cultura", "to": "/culture" }
+      { "id": "home", "label": "Inicio", "index": 0, "to": "/", "description": "Visita El Cobre" },
+      {
+        "id": "history",
+        "index": 1,
+        "label": "Historia",
+        "to": "/history",
+        "description": "Visita El Cobre"
+      },
+      {
+        "id": "geography",
+        "index": 2,
+        "label": "Geografía",
+        "to": "/geography",
+        "description": "Visita El Cobre"
+      },
+      {
+        "id": "economy",
+        "index": 3,
+        "label": "Economía",
+        "to": "/economy",
+        "description": "Visita El Cobre"
+      },
+      {
+        "id": "culture",
+        "index": 4,
+        "label": "Cultura",
+        "to": "/culture",
+        "description": "Visita El Cobre"
+      }
     ],
     "Footer": {
       "Title": "Menú",

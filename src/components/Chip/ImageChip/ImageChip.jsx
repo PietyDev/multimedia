@@ -46,10 +46,14 @@ const ImageChip = (props) => {
     <Container id={id} name={name} style={style} className={className} sx={newSx}>
       <Container
         sx={{
-          with: "90px",
-          height: "90px",
+          width: "65px",
+          height: "65px",
+          marginRight: "10px",
           img: {
-            with: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+            borderRadius: "100%",
+            width: "100%",
             height: "100%",
           },
         }}
@@ -57,8 +61,8 @@ const ImageChip = (props) => {
         <Image img={values.image} alt={`${values.title}-chip`} />
       </Container>
       <Container flexDirection="column">
-        <Typography>{values.title}</Typography>
-        <Typography>{values.text}</Typography>
+        <Typography variant="subtitle1">{values.title}</Typography>
+        <Typography variant="body2">{values.text}</Typography>
       </Container>
     </Container>
   );
@@ -76,7 +80,9 @@ ImageChip.defaultProps = {
   id: "",
   name: "",
   fullWidth: false,
-  sx: {},
+  sx: {
+    alignItems: "center",
+  },
   style: {},
 };
 

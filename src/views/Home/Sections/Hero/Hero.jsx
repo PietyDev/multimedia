@@ -7,10 +7,14 @@ import { motion } from "framer-motion";
 import { useLanguage } from "context/LanguageProvider";
 
 // @mui components
-import { useTheme, Button, Link, Typography } from "@mui/material";
+import { useTheme, Link, Typography } from "@mui/material";
 
 // own components
 import Container from "components/Container/Container";
+import { ImageChip } from "components/Chip/Chip";
+
+// images
+import heroBackground from "assets/images/color.webp";
 
 const Hero = () => {
   const { languageState } = useLanguage();
@@ -53,11 +57,11 @@ const Hero = () => {
       viewport={{ once: true }}
     >
       <Container
-        background="#1e90ff99"
         flexDirection="column"
+        fullWidth
         justifyContent="space-between"
+        alignItems="center"
         sx={{
-          width: { md: "450px", xs: "295px" },
           padding: "20px",
           height: { md: "315px", xs: "200px" },
           borderRadius: "1rem",
@@ -82,22 +86,24 @@ const Hero = () => {
                 index !== 0 && (
                   <motion.div key={item.to} variants={ulItem} viewport={{ once: true }}>
                     <Link to={item.to} style={{ textDecoration: "none" }}>
-                      <Button
-                        variant="outlined"
-                        color="lighter"
+                      <ImageChip
+                        image={heroBackground}
+                        title={item.label}
+                        text={item.description}
                         sx={{
-                          textTransform: "capitalize",
-                          marginRight: "20px",
-                          marginTop: "20px",
+                          alignItems: "center",
+                          background: `${theme.palette.primary.main}a6`,
                           borderRadius: "1rem",
-                          "&:hover": {
-                            background: theme.palette.primary.main,
+                          padding: "10px",
+                          margin: "10px",
+                          h6: {
+                            color: "aliceblue",
+                          },
+                          p: {
                             color: "aliceblue",
                           },
                         }}
-                      >
-                        {item.label}
-                      </Button>
+                      />
                     </Link>
                   </motion.div>
                 )

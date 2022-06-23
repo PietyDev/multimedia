@@ -18,6 +18,7 @@ import heroBackground from "assets/images/color.webp";
 import HeroSection from "./Sections/Hero/Hero";
 import GallerySection from "./Sections/Gallery/Gallery";
 import AboutSection from "./Sections/About/About";
+import NewsSection from "./Sections/News/News";
 
 const Home = () => {
   const { setRouteState } = useRoute();
@@ -28,11 +29,12 @@ const Home = () => {
 
   return (
     <Container flexDirection="column">
-      <Hero background={`url(${heroBackground})`}>
+      <Hero justifyContent="flex-end" alignItems="center" background={`url(${heroBackground})`}>
         <HeroSection />
       </Hero>
       <GallerySection />
       <AboutSection />
+      <NewsSection />
     </Container>
   );
 };

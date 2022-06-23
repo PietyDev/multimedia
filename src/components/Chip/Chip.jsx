@@ -50,8 +50,8 @@ const Chip = (props) => {
       sx={newSx}
       flexDirection="column"
     >
-      <Typography>{values.title}</Typography>
-      <Typography>{values.text}</Typography>
+      <Typography variant="subtitle1">{values.title}</Typography>
+      <Typography variant="subtitle2">{values.text}</Typography>
     </Container>
   );
 };
