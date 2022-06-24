@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 
+import SitoContainer from "sito-container";
+
 // contexts
 import { useRoute } from "context/RouterProvider";
 
@@ -32,10 +34,13 @@ const Home = () => {
       <Hero justifyContent="flex-end" alignItems="center" background={`url(${heroBackground})`}>
         <HeroSection />
       </Hero>
+      <div>
+        Hola
+        <SitoContainer>sito</SitoContainer>
+      </div>
       <GallerySection />
       <AboutSection />
       <NewsSection />
-      <SitoContainer>HOla</SitoContainer>
     </Container>
   );
 };
