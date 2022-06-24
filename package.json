@@ -14,6 +14,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "codememe2share": "^1.12.14",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
@@ -28,7 +29,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "react-shimmer": "^3.2.0"
+    "react-shimmer": "^3.2.0",
+    "sito-container": "/home/sito/Documents/Code/github/sito-container"
   },
   "scripts": {
     "start": "react-scripts start",

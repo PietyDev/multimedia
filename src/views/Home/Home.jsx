@@ -35,6 +35,7 @@ const Home = () => {
       <GallerySection />
       <AboutSection />
       <NewsSection />
+      <SitoContainer>HOla</SitoContainer>
     </Container>
   );
 };
