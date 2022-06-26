@@ -15,6 +15,8 @@ import { Typography } from "@mui/material";
 // own components
 import Container from "components/Container/Container";
 import Body from "components/Body/Body";
+import ListItem from "components/ListItem/ListItem";
+import Title from "components/Title/Title";
 
 // layouts
 import Section from "layouts/Section/Section";
@@ -84,13 +86,8 @@ const Content = () => {
           <motion.div key={item.id} variants={ulItem} viewport={{ once: true }}>
             <Container key={item.id}>
               {item.type === "body1" && <Body text={item.text} />}
-              {item.type === "list" && (
-                <li>
-                  <Typography sx={{ textAlign: "justify", margin: "5px 0" }} variant={item.type}>
-                    {item.text}
-                  </Typography>
-                </li>
-              )}
+              {item.type === "list" && <ListItem text={item.text} />}
+              {item.type === "title" && <Title text={item.text} header={item.header} />}
             </Container>
           </motion.div>
         ))}

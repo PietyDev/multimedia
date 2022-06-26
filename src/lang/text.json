@@ -224,7 +224,62 @@
         {
           "id": 0,
           "type": "title",
-          "text": "Al norte con el municipio San Luis y el poblado de Boniato,"
+          "header": "h4",
+          "text": "Relieve"
+        },
+        {
+          "id": 1,
+          "type": "body1",
+          "text": "El relieve de la comunidad es montañoso. Destacando la Sierra del Cobre, perteneciente al grupo orogénico Sierra Maestra. Las elevaciones máximas oscilan en cotas entre 600 y 800 metros sobre el nivel del mar."
+        },
+        {
+          "id": 2,
+          "type": "title",
+          "header": "h4",
+          "text": "Clima"
+        },
+        {
+          "id": 3,
+          "type": "body1",
+          "text": "El clima de la zona es húmedo tropical con temperaturas entre 15 y 35 grados centígrados. El régimen de lluvias es irregular, pero con dos temporadas bien definidas entre los meses de Mayo-Junio y Septiembre-Octubre. La media anual de precipitación es de 1 400mm. Los suelos son suelos de formación Sialíticos y Fersialíticos formado por la latreación de rocas vulcanógenas y vulcanógenas sedimentarias. El suelo es poco profundo y de color pardo y composición textural limosa a limoarcillosa. El suelo local ha experimentado la influencia de la actividad de la actividad minera y la tala indiscriminada En la actualidad los suelos son pobres y dan asiento a pastos y matorrales con aislados árboles y zonas estériles con afloramientos de rocas."
+        },
+        {
+          "id": 4,
+          "type": "body1",
+          "text": "El poblado se encuentra en una zona de frecuente actividad sísmica. El origen de la misma se asocia a la zona sismogeneradora Bartlet-Caimán, ubicada frente a las costas del Sur de la Sierra Maestra y particularmente frente a Santiago de Cuba."
+        },
+        {
+          "id": 5,
+          "type": "title",
+          "header": "h4",
+          "text": "Vegetación"
+        },
+        {
+          "id": 6,
+          "type": "body1",
+          "text": "La vegetación local es poco abundante. La mayor parte está atravesada por matorrales y pastos con aislados parches de vegetación más densa asociado a las elevaciones montañosas o los bordes de corrientes de agua. Hay diversidad de árboles, pero predominantes el mango, anoncillo, guásimas y palmas. Dentro de los arbustos se destaca el Marabú."
+        },
+        {
+          "id": 7,
+          "type": "title",
+          "header": "h4",
+          "text": "Hidrografía"
+        },
+        {
+          "id": 8,
+          "type": "body1",
+          "text": "Existen varias corrientes fluviales de curso muy corto con gastos poco significativo. La corriente fluvial más importante es el río Cobre con gastos estimados de entre 30 y 60 metros cúbicos por hora y cruza el poblado dividiéndolo en dos. El suministro de agua se realiza por tres vías fundamentales: Agua tratada y potabilizada en planta y suministrada por gravedad Ríos y manantiales Pozos"
+        },
+        {
+          "id": 9,
+          "type": "title",
+          "header": "h4",
+          "text": "Minería"
+        },
+        {
+          "id": 10,
+          "type": "body1",
+          "text": "Fue aquí, alrededor del Cerro de la Cantera Hill, que el primer cielo abierto de cobre ( Cobre ) minas descubiertas por los conquistadores en América comenzaron. El mineral se explotó hasta 2000, cuando se agotaron las vetas y se detectó oro alrededor de los sitios antiguos. Sin duda es en El Cobre donde los esclavos se rebelaron por primera vez en Cuba contra sus amos y hubo que traer una nueva mano de obra, mitad china, mitad española."
         }
       ]
     },
