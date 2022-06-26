@@ -17,6 +17,7 @@ import heroBackground from "assets/images/color.webp";
 // sections
 import HeroSection from "./Sections/Hero/Hero";
 import LimitsSection from "./Sections/Limits/Limits";
+import FeatureSection from "./Sections/Features/Features";
 
 const Geography = () => {
   const { setRouteState } = useRoute();
@@ -30,6 +31,7 @@ const Geography = () => {
         <HeroSection />
       </Hero>
       <LimitsSection />
+      <FeatureSection />
     </Container>
   );
 };

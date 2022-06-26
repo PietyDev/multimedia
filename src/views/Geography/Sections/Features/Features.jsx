@@ -14,7 +14,7 @@ import { Typography } from "@mui/material";
 
 // own components
 import Container from "components/Container/Container";
-import ListItem from "components/ListItem/ListItem";
+import Body from "components/Body/Body";
 
 // layouts
 import Section from "layouts/Section/Section";
@@ -70,7 +70,7 @@ const Content = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Typography variant="h3">{languageState.texts.Geography.Titles.Limits}</Typography>
+        <Typography variant="h3">{languageState.texts.Geography.Titles.Features}</Typography>
       </motion.div>
 
       <motion.ul
@@ -80,15 +80,17 @@ const Content = () => {
         viewport={{ once: true }}
         className={ulList}
       >
-        {languageState.texts.Geography.Limits.map((item) => (
+        {languageState.texts.Geography.Features.map((item) => (
           <motion.div key={item.id} variants={ulItem} viewport={{ once: true }}>
             <Container key={item.id}>
-              {item.type === "body1" && (
-                <Typography sx={{ textAlign: "justify", marginBottom: "10px" }} variant={item.type}>
-                  {item.text}
-                </Typography>
+              {item.type === "body1" && <Body text={item.text} />}
+              {item.type === "list" && (
+                <li>
+                  <Typography sx={{ textAlign: "justify", margin: "5px 0" }} variant={item.type}>
+                    {item.text}
+                  </Typography>
+                </li>
               )}
-              {item.type === "list" && <ListItem text={item.text} />}
             </Container>
           </motion.div>
         ))}

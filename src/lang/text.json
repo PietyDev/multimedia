@@ -195,7 +195,8 @@
     "Geography": {
       "Title": "Geografía",
       "Titles": {
-        "Limits": "Limita"
+        "Limits": "Limita",
+        "Features": "Características"
       },
       "Limits": [
         {
@@ -217,6 +218,13 @@
           "id": 3,
           "type": "list",
           "text": "Al oeste con el consejo popular de Dos Palmas. Su extensión territorial es de 169,5 km2."
+        }
+      ],
+      "Features": [
+        {
+          "id": 0,
+          "type": "title",
+          "text": "Al norte con el municipio San Luis y el poblado de Boniato,"
         }
       ]
     },

@@ -12,6 +12,7 @@ import { Box, Typography } from "@mui/material";
 // own components
 import Container from "components/Container/Container";
 import Image from "components/Image/Image";
+import Body from "components/Body/Body";
 
 // images
 import oldImage from "assets/images/1853.jpg";
@@ -43,11 +44,7 @@ const Content = () => {
     >
       {languageState.texts.History.Content.map((item) => (
         <Container key={item.id}>
-          {item.type === "body1" && (
-            <Typography sx={{ textAlign: "justify", marginBottom: "10px" }} variant={item.type}>
-              {item.text}
-            </Typography>
-          )}
+          {item.type === "body1" && <Body text={item.text} />}
           {item.type === "row" && (
             <Container>
               {item.content.map((jtem, j) => (
@@ -59,11 +56,7 @@ const Content = () => {
                   key={`${item.id}-${jtem.id}`}
                 >
                   <Box>
-                    {jtem.type === "body1" && (
-                      <Typography sx={{ textAlign: "justify" }} variant={jtem.type}>
-                        {jtem.text}
-                      </Typography>
-                    )}
+                    {item.type === "body1" && <Body text={item.text} />}
                     {jtem.type === "image" && (
                       <Box
                         sx={{
