@@ -22,15 +22,18 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "framer-motion": "^6.3.11",
+    "fslightbox-react": "^1.6.2-2",
     "prettier": "^2.7.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-loader-spinner": "^5.1.5",
     "react-player": "^2.10.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-scroll-to-top": "^1.0.8",
-    "react-shimmer": "^3.2.0"
+    "react-shimmer": "^3.2.0",
+    "swiper": "^8.2.4"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -25,7 +25,7 @@ import "./carousel.css";
 const Carousel = ({ items, CarouselItem, navigation, backgroundColor, pagination, sx }) => {
   const newSx = {
     backgroundColor: { backgroundColor },
-    padding: { lg: "0 7rem", md: "0 3rem", xs: "0 2rem 0 2rem" },
+    padding: { lg: "0 1rem", md: "0 1rem", xs: "0 1rem 0 1rem" },
     ...sx,
   };
 

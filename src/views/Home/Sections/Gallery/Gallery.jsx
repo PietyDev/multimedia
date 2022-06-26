@@ -1,4 +1,9 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/function-component-definition */
+
+import { useState } from "react";
+
+import FsLightbox from "fslightbox-react";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -17,10 +22,66 @@ import Image from "components/Image/Image";
 import Section from "layouts/Section/Section";
 
 // images
-import heroBackground from "assets/images/color.webp";
+import image1 from "assets/images/color.webp";
+import image2 from "assets/images/02-1140.jpg";
+import image3 from "assets/images/03-1140.jpg";
+import image4 from "assets/images/04-1140.jpg";
+import image5 from "assets/images/05-1140.jpg";
+import image6 from "assets/images/06-1140.jpg";
+import image7 from "assets/images/07-1140.jpg";
+import image8 from "assets/images/08-1140.jpg";
+import image9 from "assets/images/09-1140.jpg";
+import image10 from "assets/images/10-1140.jpg";
+import image11 from "assets/images/background.jpg";
+import image12 from "assets/images/background.webp";
+import image13 from "assets/images/basilisque.jpg";
+import image14 from "assets/images/cobre012.jpg";
+import image15 from "assets/images/el-cobre.jpg";
+import image16 from "assets/images/elcbore.webp";
+import image17 from "assets/images/elcobre.jpeg";
+import image18 from "assets/images/image_1cEdDuH.jpeg";
+import image19 from "assets/images/interno-de-la-caridad.jpg";
+import image20 from "assets/images/santuario-virgen-caridad-del-cobre.jpeg";
+import image21 from "assets/images/vista-della-chiesa-de.jpg";
 
 const Gallery = () => {
   const { languageState } = useLanguage();
+
+  const [lightBox, setLightBox] = useState({
+    toggler: false,
+    slide: 0,
+  });
+
+  const openLightBoxOnSlide = (number) => {
+    setLightBox({
+      toggler: !lightBox.toggler,
+      slide: number,
+    });
+  };
+
+  const images = [
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
+    image11,
+    image12,
+    image13,
+    image14,
+    image15,
+    image16,
+    image17,
+    image18,
+    image19,
+    image20,
+    image21,
+  ];
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -57,6 +118,7 @@ const Gallery = () => {
         flexDirection: "column",
       }}
     >
+      <FsLightbox toggler={lightBox.toggler} sources={images} slide={lightBox.slide} />
       <motion.div
         variants={apparition}
         initial="hidden"
@@ -82,18 +144,10 @@ const Gallery = () => {
         viewport={{ once: true }}
         style={{ display: "flex", padding: 0, flexWrap: "wrap" }}
       >
-        {[
-          { img: heroBackground, id: 0 },
-          { img: heroBackground, id: 1 },
-          { img: heroBackground, id: 2 },
-          { img: heroBackground, id: 3 },
-          { img: heroBackground, id: 4 },
-          { img: heroBackground, id: 5 },
-          { img: heroBackground, id: 6 },
-        ].map((item) => (
-          <motion.div key={item.id} variants={ulItem} viewport={{ once: true }}>
+        {images.map((item, id) => (
+          <motion.div key={id} variants={ulItem} viewport={{ once: true }}>
             <Container
-              key={item.id}
+              key={id}
               sx={{
                 img: {
                   width: "150px",
@@ -103,8 +157,14 @@ const Gallery = () => {
                   margin: "10px",
                 },
               }}
+              extraProps={{
+                onClick: () => {
+                  setLightBox(true);
+                  openLightBoxOnSlide(id + 1);
+                },
+              }}
             >
-              <Image img={item.img} alt={item.id} />
+              <Image img={item} alt={id} />
             </Container>
           </motion.div>
         ))}

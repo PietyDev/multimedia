@@ -25,8 +25,8 @@ function LightBox(props) {
   const [show, setShow] = useState(false);
 
   const imgSX = {
-    width: "60vw !important",
-    height: "80vh !important",
+    width: { sm: "80vw !important", md: "92vw !important", lg: "93vw !important" },
+    height: "95vh !important",
     objectFit: "cover",
     borderRadius: "1rem",
   };
