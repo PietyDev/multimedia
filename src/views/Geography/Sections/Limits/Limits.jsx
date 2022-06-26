@@ -60,7 +60,7 @@ const Content = () => {
   return (
     <Section
       sx={{
-        padding: { lg: "75px 10rem 150px 10rem", sm: "50px 60px", xs: "20px 20px" },
+        padding: { lg: "75px 10rem 0px 10rem", sm: "50px 60px", xs: "20px 20px" },
         flexDirection: "column",
       }}
     >

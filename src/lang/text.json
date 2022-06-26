@@ -287,7 +287,46 @@
       "Title": "Economía"
     },
     "Culture": {
-      "Title": "Cultura"
+      "Title": "Cultura",
+      "Brief": "La cultura tiene entre sus principales logros la inauguración del cine Turquino en 1967 y la casa de cultura comunitaria “Luisa Pérez de Zambrana” . Cuenta además con la librería “ Ismaelillo” y la biblioteca pública “ Mario Serrano” . La comunidad celebra una jornada de cultura alrededor del 17 de diciembre, fecha de la liberación del poblado por las tropas del Ejército Rebelde. Además auspicia el concurso literario Luisa Pérez de Zambrana, quizás el más antiguo auspiciado por una casa de cultura. Anualmente se celebran los carnavales, devenidos hoy festividades populares, con un visible empobrecimiento como expresión de cultura tradicional. Pese a este elemento, son signos saludables la preservación de la conga del barrio de Rivefuente y la incorporación a la vida cultural de la comunidad de la Steel Band y el grupo folclórico Cabildo Cimarrón.",
+      "Content": [
+        {
+          "id": 0,
+          "type": "title",
+          "header": "h4",
+          "text": "El santuario de la Virgen de la Caridad"
+        },
+        {
+          "id": 1,
+          "type": "row",
+          "content": [
+            {
+              "id": 0,
+              "type": "column",
+              "content": [
+                {
+                  "id": 0,
+                  "type": "body1",
+                  "text": "El Siglo XIX significó la etapa de mayor crecimiento desde el punto de vista económico y demográfico. En 1830 la compañía por acciones “Consolidada de Inglaterra se comienzan la explotación de las minas de forma organizada y continua con la más alta tecnología de explotación de minas de la época, utilizando como mano de obra esclavos criollos y africanos, coolies chinos y obreros de Canarias y de la región de Cornualles en la propia Inglaterra. Junto a estas compañías laborarán otras como Real Santiago. La cifra de 71051 toneladas para el año de 1853 será el record de extracción de cobre para el Siglo XIX. Acompañando a este crecimiento de la producción crece la población, los servicios y el casco urbano. El trasiego del mineral hasta la bahía Santiaguera se realizaba por medio de 4500 acémilas. En algún momento se intentó también el empleo de camellos, sin grandes resultados."
+                },
+                {
+                  "id": 1,
+                  "type": "body1",
+                  "text": "El 1 de noviembre de 1844 se inauguro el ferrocarril de El Cobre a Punta de Sal (primero de la región oriental) reportando beneficios netos en su primera etapa de explotación. Es señalable también a la par de la transportación ferroviaria de las minas al Puerto, la de buques desde dicho puerto a Inglaterra y Estados Unidos. Esta actividad de extracción y exportación de mineral de cobre reanima la actividad portuaria de Santiago de Cuba entre 1830 y 1868."
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "width": "200px",
+              "height": "200px",
+              "type": "image",
+              "alt": "Vista de El Cobre y el santuario en 1853",
+              "image": 0
+            }
+          ]
+        }
+      ]
     },
     "Links": [
       { "id": "home", "label": "Inicio", "index": 0, "to": "/", "description": "Visita El Cobre" },
