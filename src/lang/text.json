@@ -193,7 +193,32 @@
       ]
     },
     "Geography": {
-      "Title": "Geografía"
+      "Title": "Geografía",
+      "Titles": {
+        "Limits": "Limita"
+      },
+      "Limits": [
+        {
+          "id": 0,
+          "type": "list",
+          "text": "Al norte con el municipio San Luis y el poblado de Boniato,"
+        },
+        {
+          "id": 1,
+          "type": "list",
+          "text": "Al sur con el municipio Guamá y el consejo popular Agüero-Mar Verde,"
+        },
+        {
+          "id": 2,
+          "type": "list",
+          "text": "Al este con el consejo popular Agüero-Mar Verde y el Distrito José Martí y"
+        },
+        {
+          "id": 3,
+          "type": "list",
+          "text": "Al oeste con el consejo popular de Dos Palmas. Su extensión territorial es de 169,5 km2."
+        }
+      ]
     },
     "Economy": {
       "Title": "Economía"
