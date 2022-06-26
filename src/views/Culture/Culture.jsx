@@ -23,6 +23,7 @@ import { useLanguage } from "context/LanguageProvider";
 
 // sections
 import HeroSection from "./Sections/Hero/Hero";
+import ContentSection from "./Sections/Content/Content";
 
 const Culture = () => {
   const { setRouteState } = useRoute();
@@ -37,9 +38,10 @@ const Culture = () => {
       <Hero justifyContent="center" background={`url(${heroBackground})`}>
         <HeroSection />
       </Hero>
-      <Section>
+      <Section sx={{ padding: { lg: "50px 10rem 0px 10rem", sm: "50px 60px", xs: "20px 20px" } }}>
         <Typography>{languageState.texts.Culture.Brief}</Typography>
       </Section>
+      <ContentSection />
     </Container>
   );
 };
