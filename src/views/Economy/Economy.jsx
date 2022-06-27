@@ -26,7 +26,11 @@ const Economy = () => {
 
   return (
     <Container flexDirection="column">
-      <Hero justifyContent="center" background={`url(${heroBackground})`}>
+      <Hero
+        sx={{ padding: 0, height: { xs: "80vh", md: "100vh" } }}
+        justifyContent="center"
+        background={`url(${heroBackground})`}
+      >
         <HeroSection />
       </Hero>
     </Container>
