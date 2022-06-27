@@ -17,7 +17,7 @@ import Image from "components/Image/Image";
 import Section from "layouts/Section/Section";
 
 // images
-import heroBackground from "assets/images/color.webp";
+import cobre012 from "assets/images/cobre012.jpg";
 
 const News = () => {
   const { languageState } = useLanguage();
@@ -49,6 +49,16 @@ const News = () => {
       opacity: 1,
     },
   };
+
+  const news = [
+    {
+      id: 0,
+      url: "http://www.cubadebate.cu/noticias/2017/11/11/revitalizan-emblematico-poblado-cubano-de-el-cobre/",
+      photo: cobre012,
+      title: "Revitalizan emblemático poblado cubano de El Cobre",
+      date: "11 noviembre 2017 ",
+    },
+  ];
 
   return (
     <Section
@@ -83,15 +93,7 @@ const News = () => {
         style={{ padding: 0 }}
       >
         <Grid container>
-          {[
-            { img: heroBackground, id: 0 },
-            { img: heroBackground, id: 1 },
-            { img: heroBackground, id: 2 },
-            { img: heroBackground, id: 3 },
-            { img: heroBackground, id: 4 },
-            { img: heroBackground, id: 5 },
-            { img: heroBackground, id: 6 },
-          ].map((item) => (
+          {news.map((item) => (
             <Grid item key={item.id}>
               <motion.div variants={ulItem} viewport={{ once: true }}>
                 <Container
@@ -106,7 +108,9 @@ const News = () => {
                     },
                   }}
                 >
-                  <Image img={item.img} alt={item.id} />
+                  <Image img={item.photo} alt={item.title} />
+                  <Typography variant="subtitle1">{item.title}</Typography>
+                  <Typography variant="subtitle2">{item.date}</Typography>
                 </Container>
               </motion.div>
             </Grid>

@@ -155,6 +155,7 @@ const Gallery = () => {
                   objectFit: "cover",
                   borderRadius: "1rem",
                   margin: "10px",
+                  cursor: "pointer",
                 },
               }}
               extraProps={{
