@@ -284,7 +284,7 @@
       ]
     },
     "Economy": {
-      "Title": "Economía"
+      "Title": "Desarrollo"
     },
     "Culture": {
       "Title": "Cultura",
@@ -366,8 +366,8 @@
       {
         "id": "economy",
         "index": 3,
-        "label": "Economía",
-        "to": "/economy",
+        "label": "Desarrollo",
+        "to": "/develop",
         "description": ""
       },
       {
