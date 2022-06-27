@@ -1,5 +1,7 @@
 /* eslint-disable react/function-component-definition */
 
+import { css } from "@emotion/css";
+
 // framer-motion
 import { motion } from "framer-motion";
 
@@ -20,14 +22,27 @@ const Hero = () => {
     },
   };
 
+  const divCss = css({
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    background: "#1e90ff66",
+    padding: "0 10rem",
+  });
+
   return (
     <motion.div
       variants={apparition}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
+      className={divCss}
     >
-      <Typography variant="h1">{languageState.texts.Geography.Title}</Typography>
+      <Typography variant="h1" sx={{ color: "aliceblue" }}>
+        {languageState.texts.Geography.Title}
+      </Typography>
     </motion.div>
   );
 };

@@ -12,7 +12,7 @@ import Container from "components/Container/Container";
 import Hero from "layouts/Hero/Hero";
 
 // images
-import heroBackground from "assets/images/color.webp";
+import heroBackground from "assets/images/hotel.jpg";
 
 // sections
 import HeroSection from "./Sections/Hero/Hero";
@@ -27,7 +27,11 @@ const History = () => {
 
   return (
     <Container flexDirection="column">
-      <Hero justifyContent="center" background={`url(${heroBackground})`}>
+      <Hero
+        sx={{ padding: 0, height: { xs: "80vh", md: "100vh" } }}
+        justifyContent="center"
+        background={`url(${heroBackground})`}
+      >
         <HeroSection />
       </Hero>
       <ContentSection />

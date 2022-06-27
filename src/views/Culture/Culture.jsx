@@ -16,7 +16,7 @@ import Hero from "layouts/Hero/Hero";
 import Section from "layouts/Section/Section";
 
 // images
-import heroBackground from "assets/images/color.webp";
+import heroBackground from "assets/images/07-1140.jpg";
 
 // contexts
 import { useLanguage } from "context/LanguageProvider";
@@ -35,7 +35,11 @@ const Culture = () => {
 
   return (
     <Container flexDirection="column">
-      <Hero justifyContent="center" background={`url(${heroBackground})`}>
+      <Hero
+        sx={{ padding: 0, height: { xs: "80vh", md: "100vh" } }}
+        justifyContent="center"
+        background={`url(${heroBackground})`}
+      >
         <HeroSection />
       </Hero>
       <Section sx={{ padding: { lg: "50px 10rem 0px 10rem", sm: "50px 60px", xs: "20px 20px" } }}>
