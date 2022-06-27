@@ -284,7 +284,45 @@
       ]
     },
     "Economy": {
-      "Title": "Desarrollo"
+      "Title": "Desarrollo",
+      "Content": [
+        {
+          "id": 0,
+          "type": "title",
+          "header": "h4",
+          "text": "Desarrollo económico"
+        },
+        {
+          "id": 1,
+          "type": "row",
+          "content": [
+            {
+              "id": 0,
+              "width": "200px",
+              "height": "200px",
+              "type": "image",
+              "alt": "Vista de El Cobre y el santuario en 1853",
+              "image": 0
+            },
+            {
+              "id": 1,
+              "type": "column",
+              "content": [
+                {
+                  "id": 0,
+                  "type": "body1",
+                  "text": "Desde el descubrimiento de una estatua de una Virgen con el Niño en la Bahía de Nipe a principios de xvii °  siglo con la inscripción '  Yo soy la Virgen de la Caridad  ,' El Cobre se ha convertido en un lugar de peregrinación para los cubanos y no cubanos, especialmente desde la construcción de la basílica de Nuestra Señora de la Caridad que se levanta sobre el pueblo. A partir de 1648 , se construyó una ermita cerca de las minas de cobre. Al final del xix °  siglo, mambises del Ejército para la independencia de Cuba, el culto de la '  Virgen de la Caridad del Cobre  (es) ' como el de la madre protectora de Cuba, y oficialmente se convirtió en el santo patrón de país en 1916 siguiente una bula del Papa Benedicto XV . Al mismo tiempo, se inició en Cuba un largo y enredado proceso de transculturación y mestizaje, que inevitablemente desembocó en el nacimiento de una amplia gama de creencias religiosas."
+                },
+                {
+                  "id": 1,
+                  "type": "body1",
+                  "text": "El primer santuario se derrumbó en 1906 debido a explosiones y registros de minas. La nueva iglesia fue construida en 1926 e inaugurada el 8 de septiembre de 1927 , día del nacimiento de la Virgen María según la Iglesia Católica . Como la Virgen continúa siendo venerada en toda Cuba y su culto se extiende entre la población, se decide continuar celebrándola anualmente el 8 de septiembre . En 2011 , con motivo del 400 º aniversario de su aparición, la estatua fue transportada en un largo peregrinaje por toda la isla que atrae a una gran multitud. La basílica se encuentra bajo la circunscripción de la Arquidiócesis de Santiago de Cuba y fue declarada basílica menor el 22 de diciembre de 1977 . En 2015 , el Papa Francisco lo visitó durante su viaje a Cuba. Tienes que subir 254 escalones para llegar. Tiene un campanario central y dos torres laterales rematadas con cúpulas de ladrillo rojo. Debajo de la estatua de la Virgen, hay un pequeño espacio llamado Capilla de los Milagros , “Capilla de los Milagros” donde se colocan diferentes tipos de ofrendas. La basílica está muy concurrida y todos los días se celebra una misa ."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     "Culture": {
       "Title": "Cultura",
