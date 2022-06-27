@@ -43,6 +43,7 @@ import image18 from "assets/images/image_1cEdDuH.jpeg";
 import image19 from "assets/images/interno-de-la-caridad.jpg";
 import image20 from "assets/images/santuario-virgen-caridad-del-cobre.jpeg";
 import image21 from "assets/images/vista-della-chiesa-de.jpg";
+import { css } from "@emotion/css";
 
 const Gallery = () => {
   const { languageState } = useLanguage();
@@ -111,6 +112,13 @@ const Gallery = () => {
     },
   };
 
+  const ulGallery = css({
+    justifyContent: "center",
+    display: "flex",
+    padding: 0,
+    flexWrap: "wrap",
+  });
+
   return (
     <Section
       sx={{
@@ -142,7 +150,7 @@ const Gallery = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        style={{ display: "flex", padding: 0, flexWrap: "wrap" }}
+        className={ulGallery}
       >
         {images.map((item, id) => (
           <motion.div key={id} variants={ulItem} viewport={{ once: true }}>

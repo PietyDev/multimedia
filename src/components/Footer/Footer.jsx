@@ -34,7 +34,7 @@ const Footer = () => {
       <Grid
         sx={{
           flexGrow: 1,
-          padding: { md: "40px 10rem", xs: "20px 40px" },
+          padding: { sm: "40px 3rem", md: "40px 10rem", xs: "20px 40px" },
           justifyContent: {
             xs: "left",
             md: "space-around",
