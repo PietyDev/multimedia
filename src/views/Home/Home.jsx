@@ -29,7 +29,12 @@ const Home = () => {
 
   return (
     <Container flexDirection="column">
-      <Hero justifyContent="flex-end" alignItems="center" background={`url(${heroBackground})`}>
+      <Hero
+        justifyContent={{ xs: "center", md: "flex-end" }}
+        sx={{ padding: 0, height: { xs: "80vh", md: "100vh" } }}
+        alignItems="center"
+        background={`url(${heroBackground})`}
+      >
         <HeroSection />
       </Hero>
       <GallerySection />

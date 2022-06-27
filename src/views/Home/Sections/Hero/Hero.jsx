@@ -57,6 +57,15 @@ const Hero = () => {
     },
   };
 
+  const divCss = css({
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "#1e90ff66",
+  });
+
   const apparition = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -71,16 +80,18 @@ const Hero = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
+      className={divCss}
     >
       <Container
         flexDirection="column"
         fullWidth
-        justifyContent="space-between"
+        justifyContent={{ xs: "center", lg: "end", xl: "center" }}
         alignItems="center"
         sx={{
-          padding: "20px",
-          height: { md: "315px", xs: "200px" },
+          padding: { lg: "50px 10rem 50px 10rem", sm: "50px 60px", xs: "20px 20px" },
           borderRadius: "1rem",
+          width: "100%",
+          height: "100%",
         }}
       >
         <Typography sx={{ color: "#fff", display: { md: "flex", xs: "none" } }} variant="h1">
@@ -89,7 +100,7 @@ const Hero = () => {
         <Typography sx={{ color: "#fff", display: { md: "none", xs: "flex" } }} variant="h2">
           {languageState.texts.Home.Title}
         </Typography>
-        <Container sx={{ flexWrap: "wrap" }}>
+        <Container sx={{ flexWrap: "wrap", display: { xs: "none", lg: "flex" } }}>
           <motion.ul
             variants={container}
             initial="hidden"

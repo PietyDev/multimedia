@@ -11,6 +11,12 @@ const Hero = (props) => {
     alignItems,
     justifyContent,
     background: background || "transparent",
+    padding: { lg: "50px 10rem 50px 10rem", sm: "50px 60px", xs: "20px 20px" },
+    height: "80vh",
+    flexDirection: "column",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
     ...sx,
   };
 
@@ -25,14 +31,7 @@ Hero.defaultProps = {
   background: "aliceblue",
   alignItems: "left",
   justifyContent: "left",
-  sx: {
-    padding: { lg: "50px 10rem 50px 10rem", sm: "50px 60px", xs: "20px 20px" },
-    height: "80vh",
-    flexDirection: "column",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  },
+  sx: {},
   style: {},
 };
 
