@@ -20,7 +20,7 @@ function App() {
           <Route index element={<Home />} />
           <Route exact path="/history" element={<History />} />
           <Route exact path="/geography" element={<Geography />} />
-          <Route exact path="/economy" element={<Economy />} />
+          <Route exact path="/develop" element={<Economy />} />
           <Route exact path="/culture" element={<Culture />} />
         </Route>
       </Routes>
