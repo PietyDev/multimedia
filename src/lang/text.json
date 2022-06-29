@@ -13,7 +13,20 @@
         },
         "About": {
           "Title": "Acerca del sitio",
-          "Description": "Sitio web, multimedia, para describir a El Cobre, poblado de Santiago de Cuba"
+          "Description": "Sitio web, multimedia, para describir a El Cobre, poblado de Santiago de Cuba",
+          "Developed": {
+            "Title": "Desarrollado en:",  
+            "List": [
+              { "label": "Tauri Studio", "link": "https://tauri.app/" },
+              { "label": "React", "link": "https://reactjs.org/" },
+              { "label": "Mui", "link": "https://mui.com/" },
+              {
+                "label": "Javascript",
+                "link": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+              },
+              { "label": "NodeJs", "link": "https://nodejs.org/es/" }
+            ]
+          }
         }
       }
     },

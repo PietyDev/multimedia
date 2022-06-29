@@ -1,5 +1,9 @@
 /* eslint-disable react/function-component-definition */
 import ReactPlayer from "react-player";
+import { useState } from "react";
+
+// sito components
+import SitoContainer from "sito-container";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -11,7 +15,6 @@ import { useLanguage } from "context/LanguageProvider";
 import { Box, Link, Typography } from "@mui/material";
 
 // own components
-import Container from "components/Container/Container";
 import Image from "components/Image/Image";
 import Body from "components/Body/Body";
 import Title from "components/Title/Title";
@@ -24,6 +27,7 @@ import Section from "layouts/Section/Section";
 
 const Content = () => {
   const { languageState } = useLanguage();
+  const [error, setError] = useState(false);
 
   // images
   const images = [basilisque];
@@ -44,27 +48,44 @@ const Content = () => {
       }}
     >
       {languageState.texts.Culture.Content.map((item) => (
-        <Container key={item.id}>
+        <SitoContainer key={item.id}>
           {item.type === "body1" && <Body text={item.text} />}
           {item.type === "title" && <Title text={item.text} header={item.header} />}
           {item.type === "youtube" && (
-            <Container
+            <SitoContainer
               alignItems="center"
               justifyContent="center"
               sx={{ width: "100%", margin: "20px 0" }}
               flexDirection="column"
             >
-              <ReactPlayer url={item.url} />
+              {!error && (
+                <ReactPlayer
+                  url={item.url}
+                  onError={(e) => {
+                    console.log(e);
+                    setError(true);
+                  }}
+                />
+              )}
+              {error && (
+                <SitoContainer
+                  alignItems="center"
+                  justifyContent="center"
+                  sx={{ height: "200px", width: "200px" }}
+                >
+                  <Typography sx={{ color: "crimson" }}>Error al cargar el video</Typography>
+                </SitoContainer>
+              )}
               <Typography>{item.title}</Typography>
               <Typography>{item.description}</Typography>
               <Link href="https://www.youtube.com/channel/UCBWoi89L8Nu3cNJxBQlz5Qg" target="_blank">
                 {item.channel}
               </Link>
-            </Container>
+            </SitoContainer>
           )}
 
           {item.type === "row" && (
-            <Container>
+            <SitoContainer>
               {item.content.map((jtem, j) => (
                 <motion.div
                   variants={apparition}
@@ -110,9 +131,9 @@ const Content = () => {
                   </Box>
                 </motion.div>
               ))}
-            </Container>
+            </SitoContainer>
           )}
-        </Container>
+        </SitoContainer>
       ))}
     </Section>
   );

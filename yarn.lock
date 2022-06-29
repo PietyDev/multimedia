@@ -8285,6 +8285,30 @@ sisteransi@^1.0.5:
   resolved "https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
 
+sito-container@^0.2.14:
+  version "0.2.14"
+  resolved "https://registry.yarnpkg.com/sito-container/-/sito-container-0.2.14.tgz#b6067eeccc1bd223b353265a34dcee8ad75b0efe"
+  integrity sha512-ab7x4PNHL/TWmt6L6x1RCkxYTYPLASBJ4qXAioLXsikamtpowv2iVOYepMwN9ts4yzwBcDJ0ru9u223GLsOffA==
+  dependencies:
+    "@emotion/react" "^11.9.3"
+    "@emotion/styled" "^11.9.3"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+    react-scripts "5.0.1"
+
+sito-image@^0.2.14:
+  version "0.2.14"
+  resolved "https://registry.yarnpkg.com/sito-image/-/sito-image-0.2.14.tgz#3c51d8e7a98d1d339a78a66620653e6d4865df81"
+  integrity sha512-D0YMXUjgfyp5ADZq2RW2KGQpWekG85pp6YS+iMM9OH8vdO3y8VxUllrlMNhmxrlQoD7MHoRF3gdb1nQiyfruZQ==
+  dependencies:
+    "@emotion/css" "^11.9.0"
+    "@emotion/react" "^11.9.3"
+    "@emotion/styled" "^11.9.3"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+    react-scripts "5.0.1"
+    react-shimmer "^3.2.0"
+
 slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz"
