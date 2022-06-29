@@ -1,6 +1,7 @@
 /* eslint-disable react/function-component-definition */
 
 import { useEffect } from "react";
+import ScrollToTop from "react-scroll-to-top";
 
 // contexts
 import { useRoute } from "context/RouterProvider";
@@ -40,6 +41,7 @@ const Home = () => {
       <GallerySection />
       <AboutSection />
       <NewsSection />
+      <ScrollToTop />
     </Container>
   );
 };

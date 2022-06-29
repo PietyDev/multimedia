@@ -391,28 +391,28 @@
         "id": "history",
         "index": 1,
         "label": "Historia",
-        "to": "/history",
+        "to": "/history#",
         "description": "Conoce su historia"
       },
       {
         "id": "geography",
         "index": 2,
         "label": "Geografía",
-        "to": "/geography",
+        "to": "/geography#",
         "description": "Límites, minerales y mucho más"
       },
       {
         "id": "economy",
         "index": 3,
         "label": "Desarrollo",
-        "to": "/develop",
+        "to": "/develop#",
         "description": ""
       },
       {
         "id": "culture",
         "index": 4,
         "label": "Cultura",
-        "to": "/culture",
+        "to": "/culture#",
         "description": "Tradiciones y costumbres"
       }
     ],
