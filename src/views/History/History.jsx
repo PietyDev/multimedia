@@ -1,6 +1,7 @@
 /* eslint-disable react/function-component-definition */
 
 import { useEffect } from "react";
+import ScrollToTop from "react-scroll-to-top";
 
 // contexts
 import { useRoute } from "context/RouterProvider";
@@ -25,6 +26,14 @@ const History = () => {
     setRouteState({ type: "set", to: 1 });
   }, []);
 
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <Container flexDirection="column">
       <Hero
@@ -35,6 +44,7 @@ const History = () => {
         <HeroSection />
       </Hero>
       <ContentSection />
+      <ScrollToTop smooth />
     </Container>
   );
 };

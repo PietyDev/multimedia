@@ -301,7 +301,7 @@
               "width": "200px",
               "height": "200px",
               "type": "image",
-              "alt": "Vista de El Cobre y el santuario en 1853",
+              "alt": "Joven Club Santiago IV",
               "image": 0
             },
             {
@@ -311,16 +311,85 @@
                 {
                   "id": 0,
                   "type": "body1",
-                  "text": "Desde el descubrimiento de una estatua de una Virgen con el Niño en la Bahía de Nipe a principios de xvii °  siglo con la inscripción '  Yo soy la Virgen de la Caridad  ,' El Cobre se ha convertido en un lugar de peregrinación para los cubanos y no cubanos, especialmente desde la construcción de la basílica de Nuestra Señora de la Caridad que se levanta sobre el pueblo. A partir de 1648 , se construyó una ermita cerca de las minas de cobre. Al final del xix °  siglo, mambises del Ejército para la independencia de Cuba, el culto de la '  Virgen de la Caridad del Cobre  (es) ' como el de la madre protectora de Cuba, y oficialmente se convirtió en el santo patrón de país en 1916 siguiente una bula del Papa Benedicto XV . Al mismo tiempo, se inició en Cuba un largo y enredado proceso de transculturación y mestizaje, que inevitablemente desembocó en el nacimiento de una amplia gama de creencias religiosas."
-                },
-                {
-                  "id": 1,
-                  "type": "body1",
-                  "text": "El primer santuario se derrumbó en 1906 debido a explosiones y registros de minas. La nueva iglesia fue construida en 1926 e inaugurada el 8 de septiembre de 1927 , día del nacimiento de la Virgen María según la Iglesia Católica . Como la Virgen continúa siendo venerada en toda Cuba y su culto se extiende entre la población, se decide continuar celebrándola anualmente el 8 de septiembre . En 2011 , con motivo del 400 º aniversario de su aparición, la estatua fue transportada en un largo peregrinaje por toda la isla que atrae a una gran multitud. La basílica se encuentra bajo la circunscripción de la Arquidiócesis de Santiago de Cuba y fue declarada basílica menor el 22 de diciembre de 1977 . En 2015 , el Papa Francisco lo visitó durante su viaje a Cuba. Tienes que subir 254 escalones para llegar. Tiene un campanario central y dos torres laterales rematadas con cúpulas de ladrillo rojo. Debajo de la estatua de la Virgen, hay un pequeño espacio llamado Capilla de los Milagros , “Capilla de los Milagros” donde se colocan diferentes tipos de ofrendas. La basílica está muy concurrida y todos los días se celebra una misa ."
+                  "text": "Las principales fuentes de empleo en el poblado son: agricultura, servicios, salud y la Fábrica de Pienso. Cuenta con 58 centros laborales, de ellos 44 de carácter económico. Otros centros e instituciones: Casa de Cultura Unidades de Comercio y Gastronomía Panaderías UBPC CPA CSS UEBE Trabajadores Sociales, Sala de Computación, Sala de Videos, Cine, Funeraria, Acueducto, INDER, Acopio, Farmacia, Librería, Registro Civil, Peluquería y Barbería y otros"
                 }
               ]
             }
           ]
+        },
+        {
+          "id": 2,
+          "type": "title",
+          "header": "h4",
+          "text": "Desarrollo social"
+        },
+        {
+          "id": 3,
+          "type": "body1",
+          "text": "El Cobre cuenta con 11 964 cederistas aproximadamente agrupados en 253 CDR y 29 zonas. Tiene 5 526 federadas agrupadas en 110 Delegaciones y 18 Bloques de la FMC."
+        },
+        {
+          "id": 4,
+          "type": "title",
+          "header": "h4",
+          "text": "Salud"
+        },
+        {
+          "id": 5,
+          "type": "body1",
+          "text": "La salud recibe un fuerte impulso con la inauguración del policlínico comunitario Luis Ramírez López. Se brindan nuevos servicios estomatológicos. El hospital Ambrosio Grillo se convierte en hospital docente y clínico quirúrgico. En años recientes se extenderán los servicios del médico de la familia tanto en las áreas rurales como urbanas. Centros de salud 23 consultorios Médico de la Familia Policlínico Punto para urgencias Clínica estomatológica hogar materno Hospital Ambrosio Grillo Portuondo"
+        },
+        {
+          "id": 6,
+          "type": "title",
+          "text": "Vivienda",
+          "header": "h4"
+        },
+        {
+          "id": 7,
+          "type": "body1",
+          "text": "La revolución encaró el problema de la vivienda con varios planes de construcción masiva de viviendas. Destacándose el plan Pastorita Núñez y los proyectos Clodomira 1 y 2, para familias obreras y campesinas. Tiene 15 circunscripciones, de ellas 6 en zonas de montaña y estos son: Hongolosongo-Puerto de Moya Río Frío-Charco Mono Botija-Seibabo Turquino-Maniel Ermitaño-Nima Nima El Pajón-Casoto. \nEl poblado cuenta con un estimado de población de 17 058 habitantes."
+        },
+        {
+          "id": 8,
+          "type": "title",
+          "text": "Educación",
+          "header": "h4"
+        },
+        {
+          "id": 9,
+          "type": "body1",
+          "text": "La campaña de alfabetización abrió la educación y la cultura a una enorme masa de población de la comunidad. En pocos años logran acceder por vez primera a la educación superior personas procedentes de los estratos más humildes de la población (hijos de mineros y campesinos); graduándose de médicos e ingenieros decenas de jóvenes nacidos en la comunidad. Centros educacionales: 22 centros educacionales entre ellos:"
+        },
+        {
+          "id": 10,
+          "type": "list",
+          "text": "Seminternado"
+        },
+        {
+          "id": 11,
+          "type": "list",
+          "text": "Escuela de oficios"
+        },
+        {
+          "id": 12,
+          "type": "list",
+          "text": "Escuela especial"
+        },
+        {
+          "id": 13,
+          "type": "list",
+          "text": "Escuela de Superación Integral"
+        },
+        {
+          "id": 14,
+          "type": "list",
+          "text": "Círculo Infantil"
+        },
+        {
+          "id": 15,
+          "type": "list",
+          "text": "Secundaria Básica"
         }
       ]
     },
@@ -391,28 +460,28 @@
         "id": "history",
         "index": 1,
         "label": "Historia",
-        "to": "/history#",
+        "to": "/history",
         "description": "Conoce su historia"
       },
       {
         "id": "geography",
         "index": 2,
         "label": "Geografía",
-        "to": "/geography#",
+        "to": "/geography",
         "description": "Límites, minerales y mucho más"
       },
       {
         "id": "economy",
         "index": 3,
         "label": "Desarrollo",
-        "to": "/develop#",
+        "to": "/develop",
         "description": ""
       },
       {
         "id": "culture",
         "index": 4,
         "label": "Cultura",
-        "to": "/culture#",
+        "to": "/culture",
         "description": "Tradiciones y costumbres"
       }
     ],

@@ -1,6 +1,7 @@
 /* eslint-disable react/function-component-definition */
 
 import { useEffect } from "react";
+import ScrollToTop from "react-scroll-to-top";
 
 // contexts
 import { useRoute } from "context/RouterProvider";
@@ -33,6 +34,14 @@ const Culture = () => {
     setRouteState({ type: "set", to: 4 });
   }, []);
 
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <Container flexDirection="column">
       <Hero
@@ -46,6 +55,7 @@ const Culture = () => {
         <Typography>{languageState.texts.Culture.Brief}</Typography>
       </Section>
       <ContentSection />
+      <ScrollToTop smooth />
     </Container>
   );
 };

@@ -1,6 +1,7 @@
 /* eslint-disable react/function-component-definition */
 
 import { useEffect } from "react";
+import ScrollToTop from "react-scroll-to-top";
 
 // contexts
 import { useRoute } from "context/RouterProvider";
@@ -16,12 +17,21 @@ import heroBackground from "assets/images/color.webp";
 
 // sections
 import HeroSection from "./Sections/Hero/Hero";
+import ContentSection from "./Sections/Content/Content";
 
 const Economy = () => {
   const { setRouteState } = useRoute();
 
   useEffect(() => {
     setRouteState({ type: "set", to: 3 });
+  }, []);
+
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   }, []);
 
   return (
@@ -33,6 +43,8 @@ const Economy = () => {
       >
         <HeroSection />
       </Hero>
+      <ContentSection />
+      <ScrollToTop smooth />
     </Container>
   );
 };

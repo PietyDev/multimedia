@@ -28,6 +28,14 @@ const Home = () => {
     setRouteState({ type: "set", to: 0 });
   }, []);
 
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <Container flexDirection="column">
       <Hero
@@ -41,7 +49,7 @@ const Home = () => {
       <GallerySection />
       <AboutSection />
       <NewsSection />
-      <ScrollToTop />
+      <ScrollToTop smooth />
     </Container>
   );
 };
