@@ -1,0 +1,16 @@
+.carousel__container {
+  height: auto;
+  width: 100vw;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 25px;
+  background: #222;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+.swiper-button-next {
+  right: 9% !important;
+}
